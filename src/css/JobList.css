@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -65,3 +66,56 @@ body {
     cursor: pointer;
     font-weight: 500; 
 }
+
+/* Existing styles... */
+
+@media (max-width: 480px) {
+    .job {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 20px; 
+    }
+  
+    .job-logo {
+      width: 50px; 
+      height: 50px;
+      margin-bottom: 20px; 
+      align-self: center; 
+    }
+  
+    .job-info {
+      text-align: center; 
+    }
+  
+    .job-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      gap: 8px; 
+    }
+  
+    .company-name {
+      display: block; 
+      font-size: 18px; 
+      margin-bottom: 10px; 
+    }
+  
+    .new-tag,
+    .featured-tag {
+      font-size: 10px; 
+      padding: 5px 10px; 
+      border-radius: 15px; 
+    }
+  
+    .job-tags {
+      justify-content: center; 
+      margin-top: 20px; 
+    }
+  
+    .tag {
+      font-size: 12px;
+      padding: 5px 10px; 
+    }
+  }
+  
+  
