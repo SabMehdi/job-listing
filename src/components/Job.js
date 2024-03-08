@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Job = ({ job }) => {
+export default function Job  ({ job }) {
   return (
     <div className="job">
       <img src={job.logo} alt={`${job.company} logo`} />
@@ -13,5 +13,3 @@ const Job = ({ job }) => {
     </div>
   );
 };
-
-export default Job;

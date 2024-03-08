@@ -2,7 +2,7 @@ import React from 'react';
 import Job from './Job';
 import jobs from '../data/data.json';
 
-const JobList = () => {
+export default function JobList  ()  {
   return (
     <div className="job-list">
       {jobs.map(job => (
@@ -11,5 +11,3 @@ const JobList = () => {
     </div>
   );
 };
-
-export default JobList;
