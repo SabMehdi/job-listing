@@ -3,15 +3,18 @@
 body {
     font-family: 'League Spartan', sans-serif;
     background-color: hsl(180, 52%, 96%);
-    padding: 20px;
     color: hsl(180, 14%, 20%);
 }
 
-.job-list {
+.job-list-container {
+    padding: 0 200px 0px 200px;
+  }
+  
+  .job-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
+  }
 
 .job {
     background-color: #fff;
