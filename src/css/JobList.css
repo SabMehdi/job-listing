@@ -10,5 +10,5 @@
 .job-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px; 
+    gap: 4px;
 }

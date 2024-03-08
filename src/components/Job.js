@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default function Job  ({ job }) {
     const tags = [job.role, job.level, ...job.languages, ...job.tools];
     return (
@@ -13,7 +12,7 @@ export default function Job  ({ job }) {
       </div>
         <div className="job-tags">
             {tags.map((tag, index) => (
-                <span key={index} className="job-tag">{tag}</span>
+                <span key={index} className="tag">{tag}</span>
             ))}
         </div>
     </div>
