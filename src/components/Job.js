@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Job.css'
 
 export default function Job  ({ job }) {
     const tags = [job.role, job.level, ...job.languages, ...job.tools];

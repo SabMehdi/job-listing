@@ -1,0 +1,14 @@
+.job-tags .tag {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px 10px;
+    background-color: #eef6f6;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
