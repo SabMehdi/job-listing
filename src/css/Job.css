@@ -1,0 +1,31 @@
+
+.new-tag,
+.featured-tag {
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.new-tag {
+    background-color: #5ca4a9;
+    margin-right: 10px;
+    color: white;
+}
+
+.featured-tag {
+    background-color: #2c3a47;
+    color: white;
+}
+
+.job-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.company-name {
+    font-weight: bold;
+}
