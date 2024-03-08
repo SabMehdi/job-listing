@@ -52,7 +52,6 @@ body {
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 10px;
-    flex-grow: 1;
 }
 
 .tag {
