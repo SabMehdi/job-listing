@@ -1,13 +1,15 @@
 import React from 'react';
 import Job from './Job';
-import jobs from '../data/data.json';
+import jsonData from '../data/data.json';
+import '../css/JobList.css'
+export default function JobList() {
+  const jobList = jsonData;
 
-export default function JobList  ()  {
   return (
-    <div className="job-list">
-      {jobs.map(job => (
-        <Job key={job.id} job={job} />
-      ))}
-    </div>
+      <div className="job-list">
+        {jobList.map(job => (
+            <Job key={job.id} job={job} />
+        ))}
+      </div>
   );
 };

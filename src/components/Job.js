@@ -1,15 +1,21 @@
 import React from 'react';
 
+
 export default function Job  ({ job }) {
-  return (
+    const tags = [job.role, job.level, ...job.languages, ...job.tools];
+    return (
     <div className="job">
-      <img src={job.logo} alt={`${job.company} logo`} />
-      <div>
+      <img className="job-logo"  src={job.logo} alt={`${job.company} logo`} />
+      <div className="job-info">
         <h2>{job.position}</h2>
         <p>{job.company}</p>
-        <p>{job.postedAt} • {job.contract}</p>
-        <p>{job.location}</p>
+        <p className="job-details">{job.postedAt} • {job.contract} • {job.location}</p>
       </div>
+        <div className="job-tags">
+            {tags.map((tag, index) => (
+                <span key={index} className="job-tag">{tag}</span>
+            ))}
+        </div>
     </div>
   );
 };
