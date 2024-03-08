@@ -13,7 +13,7 @@ export default function Job({ job }) {
                     {job.featured && <span className="featured-tag">Featured</span>}
                 </div>
                 <h2>{job.position}</h2>
-                <p className="job-details">{job.postedAt} • {job.contract} • {job.location}</p>
+                <p className="job-details">{job.postedAt} &middot; {job.contract} &middot; {job.location}</p>
             </div>
             <div className="job-tags">
                 {tags.map((tag, index) => (
