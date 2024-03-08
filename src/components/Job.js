@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/Job.css'
 
 export default function Job  ({ job }) {
     const tags = [job.role, job.level, ...job.languages, ...job.tools];
@@ -7,8 +6,8 @@ export default function Job  ({ job }) {
     <div className="job">
       <img className="job-logo"  src={job.logo} alt={`${job.company} logo`} />
       <div className="job-info">
-        <h2>{job.position}</h2>
         <p>{job.company}</p>
+        <h2>{job.position}</h2>
         <p className="job-details">{job.postedAt} • {job.contract} • {job.location}</p>
       </div>
         <div className="job-tags">
