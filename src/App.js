@@ -1,8 +1,8 @@
 import './App.css';
-import WelcomePage from "./home/Home";
+import JobList from './components/JobList';
 function App() {
   return (
-    <WelcomePage/>
+    <JobList/>
   );
 }
 
